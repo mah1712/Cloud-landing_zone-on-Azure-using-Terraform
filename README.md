@@ -39,10 +39,10 @@ project_root/
 ## How to Use
 1. Clone this repository:
 ```bash
-git clone https://github.com/<your-username>/Cloud-landing_zone-on-Azure-using-Terraform.git
+git clone https://github.com/mah1712/Cloud-landing_zone-on-Azure-using-Terraform.git
 
 2. Navigate to the project folder:
-cd project_3
+cd (clone folder name)
 
 3 Initialize Terraform: #make sure your sucscription ID edit
 terraform init
