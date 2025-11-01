@@ -1,8 +1,8 @@
 resource "azurerm_key_vault" "kv" {
-  name                        = "mykeyvaultdemo12398" # must be globally unique
-  location                    = "centralindia"
-  resource_group_name         = "mahi"
-  tenant_id                   = "7d0abf88-f021-4498-a086-2ceb7a18b4e7"
+  name                        = "xxxxxxx" # must be globally unique
+  location                    = "xxxxxxx"
+  resource_group_name         = "xxxx"
+  tenant_id                   = "xxxxxxx"
   sku_name                    = "standard"
 
   soft_delete_retention_days  = 7
@@ -19,7 +19,7 @@ resource "azurerm_key_vault_secret" "admin_user" {
 # Store password as secret
 resource "azurerm_key_vault_secret" "admin_pass" {
   name         = "password"
-  value        = "mahi@12345"
+  value        = "xxxxxx"
   key_vault_id = azurerm_key_vault.kv.id
 }
 
@@ -29,8 +29,8 @@ data "azurerm_client_config" "current" {}
 
 resource "azurerm_key_vault_access_policy" "terraform" {
   key_vault_id = azurerm_key_vault.kv.id
-  tenant_id    = "7d0abf88-f021-4498-a086-2ceb7a18b4e7"
-  object_id    = "8467129a-8db5-4a83-b275-95bc63c6e2ac"
+  tenant_id    = "xxxxxxx"
+  object_id    = "xxxxxxxxxx"
 
   secret_permissions = ["Get", "List", "Set", "Delete", "Purge"]
 }
