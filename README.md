@@ -23,7 +23,8 @@ project_root/
 ├── module/
 ├── README.md
 └── .gitignore
-
+ 
+**Note - for input you must need to add terraform.tfvas file in dev and prod env.**
 
 ## Prerequisites
 - Terraform installed (v1.x or above)
